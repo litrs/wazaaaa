@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Flow above | inspirational collection of the best inspirations</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- IE < 10 support -->
+    <!--[if lte IE 9]>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <![endif]-->
+    <link rel="stylesheet" href="./assets/search.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/about.css">
+    <link rel="stylesheet" type="text/css" href="./assets/nav.css">
+
+    <link rel="shortcut icon" type="image/x-icon"
+    href="https://res.cloudinary.com/domywyfgu/image/upload/v1557393251/inspire/favicon.ico" />
+
+
+        <link href="./assets/app-style.css" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css"> -->
+  <script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+
+  <script>
+    var isMobile = false;
+    var os = 'Unknown';
+    //var mm = window.matchMedia("only screen and (max-width: 760px)");
+    var mm = window.matchMedia("only screen and (max-width: 975px)");
+    $(document).ready(function () {
+
+      var pageLoadAttributes = null;
+      //if(typeof(pageLoadAttributes) == 'undefined') var pageLoadAttributes = null;
+      if (typeof (pageType) != 'undefined') trackEvent('Page Loaded - ' + pageType, pageLoadAttributes);
+
+      setUpTopBarMenus();
+
+      checkIsMobile();
+      mm.addListener(function () {
+        checkIsMobile();
+      });
+
+      os = getOS();
+
+      /*
+       if (typeof scrollToPos !== 'undefined')
+       {
+       $(document).scrollTop(scrollToPos);
+       }
+       */
+
+      if (os != 'Android') {
+        typedOptions = {
+          strings: [
+            "Search for inspiration...."
+          ],
+          typeSpeed: 20,
+          backSpeed: 0,
+          startDelay: 12000,
+          backDelay: 3000,
+          smartBackspace: true,
+          attr: 'placeholder'
+        }
+        var typed = new Typed("#search-box", typedOptions);
+      }
+
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
+  <script src="./assets/search-advanced.js"></script>
+
+  <script src="./assets/functions.js"></script>
+  <!-- Test  -->
+
+  <style>
+    .ais-search-box--magnifier-wrapper,
+    .ais-search-box--reset-wrapper {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body>
+
+    <div id="container">
+      <div id="top-bar" style="/* top: 700px; */">
+        <div id="top-bar-main">
+          <div id="top-bar-logo">
+            <a href="/index">
+              <img src="https://res.cloudinary.com/domywyfgu/image/upload/v1557390455/inspire/flow-above-logo.svg"
+                alt="Flow above - world's best inspiration source">
+            </a>
+          </div>
+  
+          <div id="top-bar-right">
+  
+            <div class="top-bar-control" id="top-bar-profile">
+  
+              <a id="top-bar-login" href="javascript:;">
+  
+                <img style="height: 33px;" src="https://res.cloudinary.com/domywyfgu/image/upload/v1557254946/inspire/instagram-logo.svg">
+              </a>
+  
+            </div>
+  
+            <div class="top-bar-control" id="top-bar-menu" style="float:right;">
+              <a title="Main Menu" class="top-bar-control-button" data-list="menu" id="top-bar-menu-button"
+                href="javascript:;" data-ispressed="false">
+                <img src="https://res.cloudinary.com/domywyfgu/image/upload/v1557255163/inspire/icon-menu.svg" alt="Menu">
+              </a>
+  
+              <ul class="top-bar-control-list atd-mobile-scroll" id="top-bar-menu-list" tabindex="3"
+                style="display: none;">
+  
+  
+                <li>
+                  <a href="/index">Home</a>
+                </li>
+                <li>
+                  <a href="/submit">Submit</a>
+                </li>
+                <li>
+                  <a href="/about-us">About</a>
+                </li>
+              
+              </ul>
+  
+            </div>
+          </div>
+  
+        
+        </div>
+      </div>
+
+
+
+        <div class="container-15 w-container">
+            <div class="about-large">SUBMIT & CONTACT</div>
+            <p class="about-second">Support our community by emailing your inspirations at flowaboveinspiration@gmail.com
+                <br>
+                <br>
+
+           <span class="bold"> Follow us on  </span> <a href="www.instagram.com" style="text-decoration: underline;"> Instagram</a>.</p>
+    
+           <div class="about-small">Flow above to Create.</div>
+           <a href="/index"> <button type="button" class="btn btn-primary">Get Inspired</button></a>
+              <a href="/about-us">  <button type="button" class="btn btn-primary">About</button></a>
+        </div>
+
+
+        <footer>
+          Developed by Flow above -
+          Powered by Love
+      </footer>
+
+
+
+        </div>
+
+
+
+  
+
+</body>
+
+</html>
