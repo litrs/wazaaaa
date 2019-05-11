@@ -114,3 +114,22 @@
 .bold {
     font-weight: 700;
 }
+
+@media only screen and (max-width:700px) { 
+
+    .about-large {
+       
+        font-size: 30px;
+      
+    }
+    .text-block-9 {
+        font-size: 30px;
+        line-height: 90px;
+        font-weight: 700;
+    }
+    .container-15 {
+        font-size: 30px;
+    }
+}
+
+
