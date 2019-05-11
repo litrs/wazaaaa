@@ -246,7 +246,7 @@ h2 {
     }
     #sidebar {
         position: fixed;
-        width: 310px;
+        width: 280px;
         left: -330px;
         z-index: 150;
         -webkit-box-shadow: 2px 0 4px 0 rgba(50, 50, 50, .5);
@@ -343,6 +343,10 @@ h2 {
     }
 }
 
+.height {
+    height: 33px;
+}
+
 @media only screen and (max-width:700px) {
     #home-banner {
         background-attachment: scroll;
@@ -370,6 +374,9 @@ h2 {
         text-align: center;
         display: inline-block
     }
+    .height {
+        height:25px;
+    }
 }
 
 .sidebar-active {
@@ -377,7 +384,7 @@ h2 {
 }
 
 .sidebar-button-active {
-    left: 300px!important
+    left: 270px!important
 }
 
 .top-bar-control {
